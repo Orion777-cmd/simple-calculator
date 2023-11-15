@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container card d-flex flex-column justify-content-center align-items-center bg-secondary text-white mt-5">
+        <form action="operations" method="post">
+            <p class="h1 text-white p-2">Simple Calculator</p>
+            <select class="form-select mb-5" aria-label="Default select" name="operation">
+                <option selected>Choose Operation</option>
+                <option value="*">multiplication</option>
+                <option value="+">Addition</option>
+            </select>
+            
+            <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                <div class=" flex flex-row justify-content-between mb-5">
+                    <span class="" id="basic-addon1">First Number</span>
+                    <input type="text" class="form-control" placeholder="Enter first number" aria-label="First Number" name="firstNumber" aria-describedby="basic-addon1">
+                </div>
+                
+                <div class="flex flex-row justify-content-between mb-5">
+                    <span class="" id="basic-addon2">Second Number</span>
+                    <input type="text" class="form-control" placeholder="Enter second number" aria-label="Second Number" name="secondNumber" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary mb-3">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
